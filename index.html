@@ -1,1 +1,516 @@
-Currently site maintenance is being done. Please visit later.
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<link href="https://fonts.cdnfonts.com/css/stepalange" rel="stylesheet">
+
+<head>
+   <title>Home</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style> 
+   body {
+margin: 0;
+font-size: 10px;
+font-family: Stepalange;
+color: #000000;
+}
+.wrapper{
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  overflow-x: hidden;
+}
+ul{
+   display:inline-block;
+}
+a{
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+.home-header{
+  position: relative;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.home-footer{
+  padding-top: 10px;
+  text-align: center;
+  color: white;
+  width: 100%;
+  margin: auto;
+  background-color: #111111;
+}
+
+.colored-image-footer{
+  padding: 10px 0px;
+  font-size: 50px;
+  background-color: #222222;
+
+}
+
+.final-footer{
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+
+}
+.main{
+
+  text-align: center;
+
+  color:white;
+  width: 100%;
+  margin: auto;
+  max-width: 1400px;
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+
+.banner-image{
+   object-fit: cover;
+   width:100vw;
+}
+
+.cropped-video-container{
+  overflow: hidden;
+  position: relative; /* or absolute or fixed */
+  width: 100%; 
+  height: 50vh;
+}
+
+#gameplay-gif {
+  height: 100%;
+  width: 233.33vh; /* 100 * 16 / 9 */
+  min-width: 100%;
+  min-height: 42.85vw; /* 100 * 9 / 16 */
+  
+  position: absolute;
+  left: 50%; /* % of surrounding element */
+  top:50%;
+  transform: translate(-50%, -50%); /* % of current element */
+
+  }
+.gradient-background
+{
+  background: -webkit-linear-gradient(-90deg, #ffd631, #c05000);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.upper-header-element {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size:1.5em;
+
+  width: 100%;
+  margin: 5px 0px 20px 0px;
+ }
+
+.flex-centered{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ .centered-header-element {
+  /* text-shadow: 4px 4px 5px #000000; */
+  color: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+
+ }
+
+.mobile-navbar{
+  display:none
+}
+
+.mobile-navbar .mobile-navbar-row{
+  padding: 5px 0;
+  margin: 20px 0;
+  background-color: #141414;
+}
+
+.toggle-button{
+  position:absolute;
+  top: 20px;
+  right: 25px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 10px;
+}
+
+.toggle-button .bar{
+  cursor: pointer; 
+  height: 2px;
+  width: 100%;
+  background-color: #F05600;
+  border-radius: 3px;  
+}
+
+.additional-info-container{
+  display: flex;
+  margin-bottom: 50px;
+}
+.additional-info-container .columns
+{
+  margin: auto;
+  width:50%;
+}
+
+.additional-info-container .columns.game-art-container{
+  
+  align-items: center;
+}
+
+.additional-info-container .columns.content .content-container
+{
+  align-items: center;
+  padding:40px 50px;
+}
+
+.additional-info-container .columns.content .content-container h5
+{
+  color:cyan;
+  font-weight:700;
+  font-size:25px;
+}
+.additional-info-container .columns.content .content-container p
+{
+  font-weight:400;
+  font-size:16px;
+  text-align:justify;
+}
+.rounded-box{
+   display:inline-block;
+   align-items:center;
+   padding: 10px 20px;
+    border:2px outset #ffd11b;
+    border-radius: 12px;
+    text-decoration: none;
+    background-color: #9a5e1e;
+    transition: background-color 0.3s;
+    font-size: larger;
+    margin-right:10px;
+    margin-left:10px;
+}
+.rounded-box:hover{
+   background-color: #be8f5d;
+}
+  
+.logo-container img{
+   padding: 0% 1%;
+}
+
+
+@media (max-width:800px){
+  .toggle-button{
+    display: flex;
+  }
+  .nav-bar-links{
+    display:none
+  }
+
+  .mobile-navbar.active{
+    width: 100%;
+    display: block;
+    font-size: 30px;
+    background-color:#070707;
+  }
+
+
+
+  .additional-info-container{
+    flex-flow:row wrap;
+    justify-content: center;
+    }
+    .additional-info-container .columns
+    {
+      margin: auto;
+      width:100%;
+    }
+  .additional-info-container .columns.image{
+    display:block;
+    order:0;
+    width:100%;
+    }
+    .additional-info-container .columns.content
+    {
+    display:block;
+    order:1;
+    width:100%;
+    }
+    .additional-info-container .columns.content .content-container
+    {
+    padding:20px 35px;
+    }
+    .additional-info-container .columns.content .content-container h5
+    {
+    margin-bottom:5px;
+    }
+
+}
+</style>
+<script>
+   addEventListener('DOMContentLoaded', (event) => {
+   const toggleButton = document.getElementsByClassName('toggle-button')[0]
+   const mobileNavBar = document.getElementsByClassName('mobile-navbar')[0]
+   
+   toggleButton.addEventListener('click', () => {
+      mobileNavBar.classList.toggle('active')
+   })
+});
+
+</script>
+</head>
+
+<body class="wrapper">
+   <!-- <script>
+      alert("hi")
+   </script> -->
+   <header class="home-header">
+      <div class = "upper-header-element" >
+         <div class="flex-centered" style="margin: 0px 20px;">
+            <div style="display: inline-block; padding-right: 30px;">
+               <a href="https://www.cheekystork.com"><img src="https://i.ibb.co/bd80x3F/Cheeky-Stork-Horizontal.png" alt="" width="70px"></a>
+               
+            </div>
+   
+            <div style="display: inline-block;">
+               <nav >
+                  <a href="https://www.cheekystork.com/team" class="nav-bar-links" style="padding-right: 10px;"> TEAM</a>
+               </nav>
+            </div>
+
+         </div>
+         <div class="flex-centered" style="margin: 0px 20px;">
+            <div style="display: inline-block;">
+               <nav>
+                  <div class="toggle-button" >
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                  </div>
+                 
+                  <a href="https://discord.gg/KyVkma3Tyw" class="nav-bar-links" target="_blank"> <img src="https://i.ibb.co/XZPS90R/Social-1-Discord-copy.png" alt="Social-1-Discord-copy" border="0" width="25px"></a>
+                  <a href="https://twitter.com/cheekystork/" class="nav-bar-links" target="_blank"> <img src="https://i.ibb.co/zVNSn11/Social-2-Twitter-copy.png" alt="Social-2-Twitter-copy" border="0" width="25px">
+                  </a>
+                  <a href="http://www.linkedin.com/company/cheeky-stork/" class="nav-bar-links" target="_blank"> <img src="https://i.ibb.co/1M8BHfL/Social-3-Linkedin-copy.png" alt="Social-3-Linkedin-copy" border="0" width="25px">
+                  </a>
+                  <a href="https://www.facebook.com/cheekystork" class="nav-bar-links" target="_blank"> <img src="https://i.ibb.co/kQ7r8cY/Social-4-Facebook-copy.png" alt="Social-4-Facebook-copy" border="0" width="25px">
+                  </a>
+                  <a href="https://www.instagram.com/cheekystork/" class="nav-bar-links" target="_blank">  <img src="https://i.ibb.co/5GggnRF/Social-5-Instagram-copy.png" alt="Social-5-Instagram-copy" border="0" width="25px">
+                  </a>
+                  <a href="mailto:team@cheekystork.com" class="nav-bar-links">  <img src="https://i.ibb.co/txvzsTs/Social-6-Mail-copy.png" alt="Social-6-Mail-copy" border="0" width="25px">
+                  </a>
+               </nav>
+            </div>
+         </div>
+      </div>
+      <div class="mobile-navbar">
+         <div class="mobile-navbar-row">
+            <a href="https://www.cheekystork.com/team" style="display: block;">
+               TEAM
+            </a>
+         </div>
+         <div class="mobile-navbar-row" style="margin-top: 30px; background-color: #111111; padding-top: 12px;">
+            <!-- <a href="" style="padding: 2% 3%;"> <img src="https://i.ibb.co/zVNSn11/Social-2-Twitter-copy.png" alt="Social-2-Twitter-copy" border="0" width="25px">
+            </a>
+            <a href="" style="padding: 2% 3%;"> <img src="https://i.ibb.co/1M8BHfL/Social-3-Linkedin-copy.png" alt="Social-3-Linkedin-copy" border="0" width="25px">
+            </a>
+            <a href="" style="padding: 2% 3%;"> <img src="https://i.ibb.co/kQ7r8cY/Social-4-Facebook-copy.png" alt="Social-4-Facebook-copy" border="0" width="25px">
+            </a>
+            <a href="" style="padding: 2% 3%;">  <img src="https://i.ibb.co/5GggnRF/Social-5-Instagram-copy.png" alt="Social-5-Instagram-copy" border="0" width="25px">
+            </a>
+            <a href="" style="padding: 2% 3%;">  <img src="https://i.ibb.co/txvzsTs/Social-6-Mail-copy.png" alt="Social-6-Mail-copy" border="0" width="25px">
+            </a>
+            <a href="" style="padding: 2% 3%;"> <img src="https://i.ibb.co/XZPS90R/Social-1-Discord-copy.png" alt="Social-1-Discord-copy" border="0" width="25px"></a>
+            <a href="" style="padding: 2% 3%;"> <img src="https://i.ibb.co/zVNSn11/Social-2-Twitter-copy.png" alt="Social-2-Twitter-copy" border="0" width="25px">
+            </a> -->
+
+            <a href="https://discord.gg/KyVkma3Tyw" style="padding: 0% 3%;" target="_blank"> <img src="https://i.ibb.co/XZPS90R/Social-1-Discord-copy.png" alt="Social-1-Discord-copy" border="0" width="25px"></a>
+            <a href="https://twitter.com/cheekystork/" style="padding: 0% 3%;"  target="_blank"> <img src="https://i.ibb.co/zVNSn11/Social-2-Twitter-copy.png" alt="Social-2-Twitter-copy" border="0" width="25px">
+            </a>
+            <a href="http://www.linkedin.com/company/cheeky-stork/" style="padding: 0% 3%;"  target="_blank"> <img src="https://i.ibb.co/1M8BHfL/Social-3-Linkedin-copy.png" alt="Social-3-Linkedin-copy" border="0" width="25px">
+            </a>
+            <a href="https://www.facebook.com/cheekystork" style="padding: 0% 3%;"  target="_blank"> <img src="https://i.ibb.co/kQ7r8cY/Social-4-Facebook-copy.png" alt="Social-4-Facebook-copy" border="0" width="25px">
+            </a>
+            <a href="https://www.instagram.com/cheekystork/" style="padding: 0% 3%;"  target="_blank">  <img src="https://i.ibb.co/5GggnRF/Social-5-Instagram-copy.png" alt="Social-5-Instagram-copy" border="0" width="25px">
+            </a>
+            <a href="mailto:team@cheekystork.com" style="padding: 0% 3%;">  <img src="https://i.ibb.co/txvzsTs/Social-6-Mail-copy.png" alt="Social-6-Mail-copy" border="0" width="25px">
+            </a>
+         </div>
+      </div>
+      <div style="position:relative">
+         <div style="position: absolute;
+         width: 100vw;
+         align-items:center;
+         z-index: 2;
+         font-size:90px;">
+            <b  class="gradient-background">
+               GET STICKED!
+            </b> 
+         </div>
+         <div style="position: absolute; width: 100%; z-index: 1;">
+            <img src="https://i.ibb.co/nBcPPcq/BWgradient-3440-700.png" alt="BWgradient-3440-700" style="width: 100vw; height: 400px">
+         </div>
+         <div>
+            <img class = "banner-image" src="https://i.ibb.co/XLh5kFy/banner.png" alt="Banner" height="400px">
+         </div>
+      </div>
+
+      <div style="padding-top: 30px; padding-bottom: 35px;">
+         <a href="https://store.steampowered.com/app/2167400" class="rounded-box" target="_blank">
+            <div>
+               <img src="https://i.ibb.co/413BtVr/02-Steam-white.png" style="vertical-align: middle; display:inline-block;" alt="Social-1-Discord-copy" border="0" width="50px">
+               <div style="display: inline-block; width: 100px; text-wrap: wrap; vertical-align: middle;">
+                  <p style = "font-size:16px; margin:0">
+                     WISHLIST
+                  </p>
+                  <p style = "font-size:24px; margin:0">
+                     <span style ="font-size:16px">
+                        ON
+                     </span>
+                     STEAM
+                  </p>
+               </div>
+            </div>
+         </a>
+         <a href="https://www.youtube.com/watch?v=8i5XSnDqsN0" class="rounded-box" target="_blank">
+            <div>
+               <img src="https://i.ibb.co/kDRm7V6/09-Youtube-white.png" style="vertical-align: middle; display:inline-block;" alt="Watch trailer on youtube" border="0" width="50px">
+               <div style="display: inline-block; width: 100px; text-wrap: wrap; vertical-align: middle;">
+                  <p style = "font-size:16px; margin:0">
+                     WATCH TRAILER
+                  </p>
+                  <p style = "font-size:24px; margin:0">
+                     <span style ="font-size:16px">
+                        ON
+                     </span> 
+                     YOUTUBE
+                  </p>
+               </div>
+            </div>
+         </a>
+      </div>
+   </header>
+
+   <main class="main">
+      <section class="additional-info-container">
+         <div class="columns content">
+            <div class="content-container">
+               <h5 style="color: #ffb300;">
+                  MAYHEM
+               </h5>
+               <p style="width: 95%; margin:auto">
+                Get Sticked is a couch co-op experience in which you and your friends will race to escape a deadly temple shrouded in darkness. Every surface can hide lethal traps which become visible on contact. In a cycle of death, discovery, and revival, push deeper every time, clambering over each other’s limp bodies.
+               </p>
+            </div>
+         </div>
+         <div class="columns game-art-container">
+            <img src="https://i.ibb.co/DChcBCr/Level02.gif" alt="First-slide-BG" border="0" width="80%">
+         </div>
+      </section>
+      <section class="additional-info-container">
+         <div class="columns game-art-container">
+            <img src="https://i.ibb.co/Q8VH7tJ/Axe-Mischief.gif" alt="First-slide-BG" border="0" width="80%">
+         </div>
+         <div class="columns content">
+            <div class="content-container">
+               
+               <h5 style="color: #ffb300;">
+                  MISCHIEF
+               </h5>
+               <p style="width: 95%; margin:auto">
+                  Play as dapper gentlemen armed with ungentlemanly quips and canes, ready to dish out mockery in all forms (fully voiced)!
+               </p>
+            </div>
+         </div>
+      </section>
+      <section class="additional-info-container">
+         <div class="columns content">
+            <div class="content-container">
+               <h5 style="color: #ffb300;">
+                  MERRIMENT
+               </h5>
+               <p style="width: 95%; margin:auto">
+                  <ul style="text-align:left; font-size:16px">
+                     <li>Local co-op for up to 8 players</li>
+                     <li>Unique blend of casual and rage platforming</li>
+                     <li>Hilarious player interactions</li>
+                     <li>12 unique rooms</li>
+                     <li>Accessible for all ages and skill levels</li>
+                     <li>Support for Steam Remote Play Together</li>
+                  </ul>
+               </p>
+            </div>
+         </div>
+         <div class="columns game-art-container">
+            <img src="https://i.ibb.co/2jK3M40/Merriment.gif" alt="First-slide-BG" border="0" width="80%">
+         </div>
+      </section>
+     
+   </main>
+
+   <footer class="home-footer">
+
+      <h1>
+         FOLLOW US
+      </h1>
+      <div class="colored-image-footer" style="padding: 10px 16% 5px 16%;">
+         <span>
+            <a href="https://discord.gg/KyVkma3Tyw" style="padding: 0% 1%;" target="_blank"> <img src="https://i.ibb.co/XZPS90R/Social-1-Discord-copy.png" alt="Social-1-Discord-copy" border="0" width="40px">
+            </a>
+            <a href="https://store.steampowered.com/publisher/cheekystork" style="padding: 0% 1%;" target="_blank"> <img src="https://i.ibb.co/413BtVr/02-Steam-white.png" alt="Social-1-Discord-copy" border="0" width="40px">
+            </a>
+            <a href="https://twitter.com/cheekystork/" style="padding: 0% 1%;" target="_blank"> <img src="https://i.ibb.co/zVNSn11/Social-2-Twitter-copy.png" alt="Social-2-Twitter-copy" border="0" width="40px">
+            </a>
+            <a href="http://www.linkedin.com/company/cheeky-stork/" style="padding: 0% 1%;" target="_blank"> <img src="https://i.ibb.co/1M8BHfL/Social-3-Linkedin-copy.png" alt="Social-3-Linkedin-copy" border="0" width="40px">
+            </a>
+            <a href="https://www.facebook.com/cheekystork" style="padding: 0% 1%;" target="_blank"> <img src="https://i.ibb.co/kQ7r8cY/Social-4-Facebook-copy.png" alt="Social-4-Facebook-copy" border="0" width="40px">
+            </a>
+            <a href="https://www.twitch.tv/cheekystork" style="padding: 0% 1%;" target="_blank"> <img src="https://i.ibb.co/c1Rq3cs/06-Twitch-white.png" alt="Social-4-Facebook-copy" border="0" width="40px">
+            </a>
+            <a href="https://www.tiktok.com/@cheekystork?lang=en" style="padding: 0% 1%;" target="_blank"> <img src="https://i.ibb.co/z64bWFB/07-Tik-Tok-white.png" alt="Social-4-Facebook-copy" border="0" width="40px">
+            </a>
+            <a href="https://www.instagram.com/cheekystork/" style="padding: 0% 1%;" target="_blank">  <img src="https://i.ibb.co/5GggnRF/Social-5-Instagram-copy.png" alt="Social-5-Instagram-copy" border="0" width="40px">
+            </a>
+            <a href="https://www.youtube.com/channel/UCPTEf-VbL-_J7LLqdyURJsQ/featured" style="padding: 0% 1%;" target="_blank">  <img src="https://i.ibb.co/kDRm7V6/09-Youtube-white.png" alt="Social-5-Instagram-copy" border="0" width="40px">
+            </a>
+         </span>
+      </div>
+
+      <h1 >
+         CONTACT US
+      </h1>
+      <div class="colored-image-footer" style="align-items: center;">
+         <a href="mailto:team@cheekystork.com" style="display: block;"> <img src="https://i.ibb.co/txvzsTs/Social-6-Mail-copy.png" alt="Social-6-Mail-copy" border="0" width="80px">
+         </a>
+         <div>
+            <div style="display:inline-block; margin: 0px">
+               <img src="https://i.ibb.co/gt18bXV/Cheeky-Stork-Vertical.png" style="object-fit:cover; object-position:0% 0%; width:40px; height:60px; margin: 0px" alt="">
+            </div>
+            <p style="font-size:12px; text-align: justify; display: inline-block;">
+               "Mandro gandro studija", MB <br>
+               Laisvės pr. 60-1107 <br>
+               LT-05120 Vilnius <br>
+               team@cheekystork.com
+            </p>
+         </div>
+      </div>
+   </footer>
+</body>
+
+</html>
