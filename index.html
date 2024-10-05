@@ -79,8 +79,10 @@ a{
 .cropped-video-container{
   overflow: hidden;
   position: relative; /* or absolute or fixed */
-  width: 100%; 
-  height: 50vh;
+  align-items:center;
+  object-fit:cover;
+  width:100vw;
+  height:500px;
 }
 
 #gameplay-gif {
@@ -367,7 +369,10 @@ a{
             <img src="https://i.ibb.co/nBcPPcq/BWgradient-3440-700.png" alt="BWgradient-3440-700" style="width: 100vw; height: 400px">
          </div>
          <div>
-            <img class = "banner-image" src="https://i.ibb.co/XLh5kFy/banner.png" alt="Banner" height="400px">
+            <video class="cropped-video-container" poster="https://i.ibb.co/XLh5kFy/banner.png" playsinline autoplay muted loop>
+               <source src="banner.mp4" type="video/mp4">
+             Your browser does not support the video tag.
+             </video>
          </div>
       </div>
 
