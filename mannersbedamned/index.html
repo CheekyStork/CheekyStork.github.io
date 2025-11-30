@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -13,273 +13,286 @@
    <title>Home</title>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <style> 
-   body {
-margin: 0;
-font-size: 10px;
-font-family: Stepalange;
-color: #000000;
-}
-.wrapper{
-  width: 100%;
-  height: 100%;
-  background-color: #000000;
-  overflow-x: hidden;
-}
-ul{
-   display:inline-block;
-}
-a{
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-}
-.home-header{
-  position: relative;
-  text-align: center;
-  width: 100%;
-  overflow: hidden;
-}
+   <style>
+      body {
+         margin: 0;
+         font-size: 10px;
+         font-family: Stepalange;
+         color: #000000;
+      }
 
-.home-footer{
-  padding-top: 10px;
-  text-align: center;
-  color: white;
-  width: 100%;
-  margin: auto;
-  background-color: #111111;
-}
+      .wrapper {
+         width: 100%;
+         height: 100%;
+         background-color: #000000;
+         overflow-x: hidden;
+      }
 
-.colored-image-footer{
-  padding: 10px 0px;
-  font-size: 50px;
-  background-color: #222222;
+      ul {
+         display: inline-block;
+      }
 
-}
+      a {
+         color: white;
+         background-color: transparent;
+         text-decoration: none;
+      }
 
-.final-footer{
-  padding: 20px 0px;
-  display: flex;
-  justify-content: center;
+      .home-header {
+         position: relative;
+         text-align: center;
+         width: 100%;
+         overflow: hidden;
+      }
 
-}
-.main{
+      .home-footer {
+         padding-top: 10px;
+         text-align: center;
+         color: white;
+         width: 100%;
+         margin: auto;
+         background-color: #111111;
+      }
 
-  text-align: center;
+      .colored-image-footer {
+         padding: 10px 0px;
+         font-size: 50px;
+         background-color: #222222;
 
-  color:white;
-  width: 100%;
-  margin: auto;
-  max-width: 1400px;
-  padding-top: 20px;
-  padding-bottom: 80px;
-}
+      }
 
-.banner-image{
-   object-fit: cover;
-   width:100vw;
-}
+      .final-footer {
+         padding: 20px 0px;
+         display: flex;
+         justify-content: center;
 
-.cropped-video-container{
-  overflow: hidden;
-  position: relative; /* or absolute or fixed */
-  align-items:center;
-  object-fit:cover;
-  width:100vw;
-  height:500px;
-}
+      }
 
-#gameplay-gif {
-  height: 100%;
-  width: 233.33vh; /* 100 * 16 / 9 */
-  min-width: 100%;
-  min-height: 42.85vw; /* 100 * 9 / 16 */
-  
-  position: absolute;
-  left: 50%; /* % of surrounding element */
-  top:50%;
-  transform: translate(-50%, -50%); /* % of current element */
+      .main {
 
-  }
-.gradient-background
-{
-  background: -webkit-linear-gradient(-90deg, #ffd631, #c05000);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.upper-header-element {
+         text-align: center;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+         color: white;
+         width: 100%;
+         margin: auto;
+         max-width: 1400px;
+         padding-top: 20px;
+         padding-bottom: 80px;
+      }
 
-  font-size:1.5em;
+      .banner-image {
+         object-fit: cover;
+         width: 100vw;
+      }
 
-  width: 100%;
-  margin: 5px 0px 20px 0px;
- }
+      .cropped-video-container {
+         overflow: hidden;
+         position: relative;
+         /* or absolute or fixed */
+         align-items: center;
+         object-fit: cover;
+         width: 100vw;
+         height: 500px;
+      }
 
-.flex-centered{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+      #gameplay-gif {
+         height: 100%;
+         width: 233.33vh;
+         /* 100 * 16 / 9 */
+         min-width: 100%;
+         min-height: 42.85vw;
+         /* 100 * 9 / 16 */
 
- .centered-header-element {
-  /* text-shadow: 4px 4px 5px #000000; */
-  color: #ffffff;
+         position: absolute;
+         left: 50%;
+         /* % of surrounding element */
+         top: 50%;
+         transform: translate(-50%, -50%);
+         /* % of current element */
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
+      }
 
- }
+      .gradient-background {
+         background: -webkit-linear-gradient(-90deg, #ffd631, #c05000);
+         background-clip: text;
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+      }
 
-.mobile-navbar{
-  display:none
-}
+      .upper-header-element {
 
-.mobile-navbar .mobile-navbar-row{
-  padding: 5px 0;
-  margin: 20px 0;
-  background-color: #141414;
-}
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
 
-.toggle-button{
-  position:absolute;
-  top: 20px;
-  right: 25px;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 25px;
-  height: 10px;
-}
+         font-size: 1.5em;
 
-.toggle-button .bar{
-  cursor: pointer; 
-  height: 2px;
-  width: 100%;
-  background-color: #F05600;
-  border-radius: 3px;  
-}
+         width: 100%;
+         margin: 5px 0px 20px 0px;
+      }
 
-.additional-info-container{
-  display: flex;
-  margin-bottom: 50px;
-}
-.additional-info-container .columns
-{
-  margin: auto;
-  width:50%;
-}
+      .flex-centered {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
 
-.additional-info-container .columns.game-art-container{
-  
-  align-items: center;
-}
+      .centered-header-element {
+         /* text-shadow: 4px 4px 5px #000000; */
+         color: #ffffff;
 
-.additional-info-container .columns.content .content-container
-{
-  align-items: center;
-  padding:40px 50px;
-}
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 50px;
 
-.additional-info-container .columns.content .content-container h5
-{
-  color:cyan;
-  font-weight:700;
-  font-size:30px;
-}
-.additional-info-container .columns.content .content-container p
-{
-  font-weight:400;
-  font-size:18px;
-  text-align:justify;
-}
-.rounded-box{
-   display:inline-block;
-   align-items:center;
-   padding: 10px 20px;
-    border:2px outset #ffd11b;
-    border-radius: 12px;
-    text-decoration: none;
-    background-color: #9a5e1e;
-    transition: background-color 0.3s;
-    font-size: larger;
-    margin-right:10px;
-    margin-left:10px;
-}
-.rounded-box:hover{
-   background-color: #be8f5d;
-}
-  
-.logo-container img{
-   padding: 0% 1%;
-}
+      }
 
+      .mobile-navbar {
+         display: none
+      }
 
-@media (max-width:800px){
-  .toggle-button{
-    display: flex;
-  }
-  .nav-bar-links{
-    display:none;
-  }
+      .mobile-navbar .mobile-navbar-row {
+         padding: 5px 0;
+         margin: 20px 0;
+         background-color: #141414;
+      }
 
-  .mobile-navbar.active{
-    width: 100%;
-    display: block;
-    font-size: 30px;
-    background-color:#070707;
-  }
+      .toggle-button {
+         position: absolute;
+         top: 20px;
+         right: 25px;
+         display: none;
+         flex-direction: column;
+         justify-content: space-between;
+         width: 25px;
+         height: 10px;
+      }
+
+      .toggle-button .bar {
+         cursor: pointer;
+         height: 2px;
+         width: 100%;
+         background-color: #F05600;
+         border-radius: 3px;
+      }
+
+      .additional-info-container {
+         display: flex;
+         margin-bottom: 50px;
+      }
+
+      .additional-info-container .columns {
+         margin: auto;
+         width: 50%;
+      }
+
+      .additional-info-container .columns.game-art-container {
+
+         align-items: center;
+      }
+
+      .additional-info-container .columns.content .content-container {
+         align-items: center;
+         padding: 40px 50px;
+      }
+
+      .additional-info-container .columns.content .content-container h5 {
+         color: cyan;
+         font-weight: 700;
+         font-size: 30px;
+      }
+
+      .additional-info-container .columns.content .content-container p {
+         font-weight: 400;
+         font-size: 18px;
+         text-align: justify;
+      }
+
+      .rounded-box {
+         display: inline-block;
+         align-items: center;
+         padding: 10px 20px;
+         border: 2px outset #ffd11b;
+         border-radius: 12px;
+         text-decoration: none;
+         background-color: #9a5e1e;
+         transition: background-color 0.3s;
+         font-size: larger;
+         margin-right: 10px;
+         margin-left: 10px;
+      }
+
+      .rounded-box:hover {
+         background-color: #be8f5d;
+      }
+
+      .logo-container img {
+         padding: 0% 1%;
+      }
 
 
+      @media (max-width:800px) {
+         .toggle-button {
+            display: flex;
+         }
 
-  .additional-info-container{
-    flex-flow:row wrap;
-    justify-content: center;
-    }
-    .additional-info-container .columns
-    {
-      margin: auto;
-      width:100%;
-    }
-  .additional-info-container .columns.image{
-    display:block;
-    order:0;
-    width:100%;
-    }
-    .additional-info-container .columns.content
-    {
-    display:block;
-    order:1;
-    width:100%;
-    }
-    .additional-info-container .columns.content .content-container
-    {
-    padding:20px 35px;
-    }
-    .additional-info-container .columns.content .content-container h5
-    {
-    margin-bottom:5px;
-    }
+         .nav-bar-links {
+            display: none;
+         }
 
-}
-</style>
-<script>
-   addEventListener('DOMContentLoaded', (event) => {
-   const toggleButton = document.getElementsByClassName('toggle-button')[0]
-   const mobileNavBar = document.getElementsByClassName('mobile-navbar')[0]
-   
-   toggleButton.addEventListener('click', () => {
-      mobileNavBar.classList.toggle('active')
-   })
-});
+         .mobile-navbar.active {
+            width: 100%;
+            display: block;
+            font-size: 30px;
+            background-color: #070707;
+         }
 
-</script>
+
+
+         .additional-info-container {
+            flex-flow: row wrap;
+            justify-content: center;
+         }
+
+         .additional-info-container .columns {
+            margin: auto;
+            width: 100%;
+         }
+
+         .additional-info-container .columns.image {
+            display: block;
+            order: 0;
+            width: 100%;
+         }
+
+         .additional-info-container .columns.content {
+            display: block;
+            order: 1;
+            width: 100%;
+         }
+
+         .additional-info-container .columns.content .content-container {
+            padding: 20px 35px;
+         }
+
+         .additional-info-container .columns.content .content-container h5 {
+            margin-bottom: 5px;
+         }
+
+      }
+   </style>
+   <script>
+      addEventListener('DOMContentLoaded', (event) => {
+         const toggleButton = document.getElementsByClassName('toggle-button')[0];
+         const mobileNavBar = document.getElementsByClassName('mobile-navbar')[0];
+
+         toggleButton.addEventListener('click', () => {
+            mobileNavBar.classList.toggle('active');
+         })
+      });
+
+   </script>
 </head>
 
 <body class="wrapper">
@@ -287,43 +300,58 @@ a{
       alert("hi")
    </script> -->
    <header class="home-header">
-      <div class = "upper-header-element" >
+      <div class="upper-header-element">
          <div class="flex-centered" style="margin: 10px 20px;">
             <div style="display: inline-block; padding-right:40px;">
-               <a href="https://www.cheekystork.com"><img src="https://i.ibb.co/bd80x3F/Cheeky-Stork-Horizontal.png" alt="" width="70px"></a>
-               
+               <a href="https://www.cheekystork.com"><img src="https://i.ibb.co/bd80x3F/Cheeky-Stork-Horizontal.png"
+                     alt="" width="70px"></a>
+
             </div>
-   
+
             <div style="display: inline-block;">
-               <nav >
-                  <a href="https://www.cheekystork.com/team" class="nav-bar-links" style="padding-right: 10px; font-size: 20px;"> TEAM</a>
+               <nav>
+                  <a href="https://www.cheekystork.com/team" class="nav-bar-links"
+                     style="padding-right: 10px; font-size: 20px;"> TEAM</a>
                </nav>
             </div>
             <div style="display: inline-block;">
-               <nav >
-                  <a href="https://www.cheekystork.com/presskit" class="nav-bar-links" style="padding-right: 10px; font-size: 20px;"> PRESSKIT</a>
+               <nav>
+                  <a href="https://www.cheekystork.com/presskit" class="nav-bar-links"
+                     style="padding-right: 10px; font-size: 20px;"> PRESSKIT</a>
                </nav>
             </div>
          </div>
          <div class="flex-centered" style="margin: 0px 20px;">
             <div style="display: inline-block;">
                <nav>
-                  <div class="toggle-button" >
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
+                  <div class="toggle-button">
+                     <span class="bar"></span>
+                     <span class="bar"></span>
+                     <span class="bar"></span>
                   </div>
-                 
-                  <a href="https://discord.gg/KyVkma3Tyw" class="nav-bar-links" target="_blank"> <img src="https://i.ibb.co/XZPS90R/Social-1-Discord-copy.png" alt="Social-1-Discord-copy" border="0" width="25px"></a>
-                  <a href="https://twitter.com/cheekystork/" class="nav-bar-links" target="_blank"> <img src="https://i.ibb.co/zVNSn11/Social-2-Twitter-copy.png" alt="Social-2-Twitter-copy" border="0" width="25px">
+
+                  <a href="https://discord.gg/KyVkma3Tyw" class="nav-bar-links" target="_blank"> <img
+                        src="https://i.ibb.co/XZPS90R/Social-1-Discord-copy.png" alt="Social-1-Discord-copy" border="0"
+                        width="25px"></a>
+                  <a href="https://twitter.com/cheekystork/" class="nav-bar-links" target="_blank"> <img
+                        src="https://i.ibb.co/zVNSn11/Social-2-Twitter-copy.png" alt="Social-2-Twitter-copy" border="0"
+                        width="25px">
                   </a>
-                  <a href="http://www.linkedin.com/company/cheeky-stork/" class="nav-bar-links" target="_blank"> <img src="https://i.ibb.co/1M8BHfL/Social-3-Linkedin-copy.png" alt="Social-3-Linkedin-copy" border="0" width="25px">
+                  <a href="http://www.linkedin.com/company/cheeky-stork/" class="nav-bar-links" target="_blank"> <img
+                        src="https://i.ibb.co/1M8BHfL/Social-3-Linkedin-copy.png" alt="Social-3-Linkedin-copy"
+                        border="0" width="25px">
                   </a>
-                  <a href="https://www.facebook.com/cheekystork" class="nav-bar-links" target="_blank"> <img src="https://i.ibb.co/kQ7r8cY/Social-4-Facebook-copy.png" alt="Social-4-Facebook-copy" border="0" width="25px">
+                  <a href="https://www.facebook.com/cheekystork" class="nav-bar-links" target="_blank"> <img
+                        src="https://i.ibb.co/kQ7r8cY/Social-4-Facebook-copy.png" alt="Social-4-Facebook-copy"
+                        border="0" width="25px">
                   </a>
-                  <a href="https://www.instagram.com/cheekystork/" class="nav-bar-links" target="_blank">  <img src="https://i.ibb.co/5GggnRF/Social-5-Instagram-copy.png" alt="Social-5-Instagram-copy" border="0" width="25px">
+                  <a href="https://www.instagram.com/cheekystork/" class="nav-bar-links" target="_blank"> <img
+                        src="https://i.ibb.co/5GggnRF/Social-5-Instagram-copy.png" alt="Social-5-Instagram-copy"
+                        border="0" width="25px">
                   </a>
-                  <a href="mailto:team@cheekystork.com" class="nav-bar-links">  <img src="https://i.ibb.co/txvzsTs/Social-6-Mail-copy.png" alt="Social-6-Mail-copy" border="0" width="25px">
+                  <a href="mailto:team@cheekystork.com" class="nav-bar-links"> <img
+                        src="https://i.ibb.co/txvzsTs/Social-6-Mail-copy.png" alt="Social-6-Mail-copy" border="0"
+                        width="25px">
                   </a>
                </nav>
             </div>
@@ -355,16 +383,28 @@ a{
             <a href="" style="padding: 2% 3%;"> <img src="https://i.ibb.co/zVNSn11/Social-2-Twitter-copy.png" alt="Social-2-Twitter-copy" border="0" width="25px">
             </a> -->
 
-            <a href="https://discord.gg/KyVkma3Tyw" style="padding: 0% 3%;" target="_blank"> <img src="https://i.ibb.co/XZPS90R/Social-1-Discord-copy.png" alt="Social-1-Discord-copy" border="0" width="25px"></a>
-            <a href="https://twitter.com/cheekystork/" style="padding: 0% 3%;"  target="_blank"> <img src="https://i.ibb.co/zVNSn11/Social-2-Twitter-copy.png" alt="Social-2-Twitter-copy" border="0" width="25px">
+            <a href="https://discord.gg/KyVkma3Tyw" style="padding: 0% 3%;" target="_blank"> <img
+                  src="https://i.ibb.co/XZPS90R/Social-1-Discord-copy.png" alt="Social-1-Discord-copy" border="0"
+                  width="25px"></a>
+            <a href="https://twitter.com/cheekystork/" style="padding: 0% 3%;" target="_blank"> <img
+                  src="https://i.ibb.co/zVNSn11/Social-2-Twitter-copy.png" alt="Social-2-Twitter-copy" border="0"
+                  width="25px">
             </a>
-            <a href="http://www.linkedin.com/company/cheeky-stork/" style="padding: 0% 3%;"  target="_blank"> <img src="https://i.ibb.co/1M8BHfL/Social-3-Linkedin-copy.png" alt="Social-3-Linkedin-copy" border="0" width="25px">
+            <a href="http://www.linkedin.com/company/cheeky-stork/" style="padding: 0% 3%;" target="_blank"> <img
+                  src="https://i.ibb.co/1M8BHfL/Social-3-Linkedin-copy.png" alt="Social-3-Linkedin-copy" border="0"
+                  width="25px">
             </a>
-            <a href="https://www.facebook.com/cheekystork" style="padding: 0% 3%;"  target="_blank"> <img src="https://i.ibb.co/kQ7r8cY/Social-4-Facebook-copy.png" alt="Social-4-Facebook-copy" border="0" width="25px">
+            <a href="https://www.facebook.com/cheekystork" style="padding: 0% 3%;" target="_blank"> <img
+                  src="https://i.ibb.co/kQ7r8cY/Social-4-Facebook-copy.png" alt="Social-4-Facebook-copy" border="0"
+                  width="25px">
             </a>
-            <a href="https://www.instagram.com/cheekystork/" style="padding: 0% 3%;"  target="_blank">  <img src="https://i.ibb.co/5GggnRF/Social-5-Instagram-copy.png" alt="Social-5-Instagram-copy" border="0" width="25px">
+            <a href="https://www.instagram.com/cheekystork/" style="padding: 0% 3%;" target="_blank"> <img
+                  src="https://i.ibb.co/5GggnRF/Social-5-Instagram-copy.png" alt="Social-5-Instagram-copy" border="0"
+                  width="25px">
             </a>
-            <a href="mailto:team@cheekystork.com" style="padding: 0% 3%;">  <img src="https://i.ibb.co/txvzsTs/Social-6-Mail-copy.png" alt="Social-6-Mail-copy" border="0" width="25px">
+            <a href="mailto:team@cheekystork.com" style="padding: 0% 3%;"> <img
+                  src="https://i.ibb.co/txvzsTs/Social-6-Mail-copy.png" alt="Social-6-Mail-copy" border="0"
+                  width="25px">
             </a>
          </div>
       </div>
@@ -374,31 +414,35 @@ a{
          align-items:center;
          z-index: 2;
          font-size:90px;">
-            <b  class="gradient-background">
+            <b class="gradient-background">
                MANNERS BE DAMNED!
-            </b> 
+            </b>
          </div>
          <div style="position: absolute; width: 100%; z-index: 1;">
-            <img src="https://i.ibb.co/nBcPPcq/BWgradient-3440-700.png" alt="BWgradient-3440-700" style="width: 100vw; height: 400px">
+            <img src="https://i.ibb.co/nBcPPcq/BWgradient-3440-700.png" alt="BWgradient-3440-700"
+               style="width: 100vw; height: 400px">
          </div>
          <div>
-            <video class="cropped-video-container" poster="https://i.ibb.co/XLh5kFy/banner.png" playsinline autoplay muted loop>
+            <video class="cropped-video-container" poster="https://i.ibb.co/XLh5kFy/banner.png" playsinline autoplay
+               muted loop>
                <source src="./images/banner.mp4" type="video/mp4">
-             Your browser does not support the video tag.
-             </video>
+               Your browser does not support the video tag.
+            </video>
          </div>
       </div>
 
       <div style="padding-top: 50px; padding-bottom: 35px;">
          <a href="https://store.steampowered.com/app/3044620/Get_Sticked/" class="rounded-box" target="_blank">
             <div>
-               <img src="https://i.ibb.co/413BtVr/02-Steam-white.png" style="vertical-align: middle; display:inline-block;" alt="Social-1-Discord-copy" border="0" width="50px">
+               <img src="https://i.ibb.co/413BtVr/02-Steam-white.png"
+                  style="vertical-align: middle; display:inline-block;" alt="Social-1-Discord-copy" border="0"
+                  width="50px">
                <div style="display: inline-block; width: 100px; text-wrap: wrap; vertical-align: middle;">
-                  <p style = "font-size:16px; margin:0">
-                     WISHLIST
+                  <p style="font-size:16px; margin:0">
+                     AVAILABLE
                   </p>
-                  <p style = "font-size:24px; margin:0">
-                     <span style ="font-size:16px">
+                  <p style="font-size:24px; margin:0">
+                     <span style="font-size:16px">
                         ON
                      </span>
                      STEAM
@@ -406,17 +450,19 @@ a{
                </div>
             </div>
          </a>
-         <a href="https://www.youtube.com/watch?v=fG3Ztj_zDB8" class="rounded-box" target="_blank">
+         <a href="https://www.youtube.com/watch?v=xGSV4uNZ21s" class="rounded-box" target="_blank">
             <div>
-               <img src="https://i.ibb.co/kDRm7V6/09-Youtube-white.png" style="vertical-align: middle; display:inline-block;" alt="Watch trailer on youtube" border="0" width="50px">
+               <img src="https://i.ibb.co/kDRm7V6/09-Youtube-white.png"
+                  style="vertical-align: middle; display:inline-block;" alt="Watch trailer on youtube" border="0"
+                  width="50px">
                <div style="display: inline-block; width: 100px; text-wrap: wrap; vertical-align: middle;">
-                  <p style = "font-size:16px; margin:0">
+                  <p style="font-size:16px; margin:0">
                      WATCH TRAILER
                   </p>
-                  <p style = "font-size:24px; margin:0">
-                     <span style ="font-size:16px">
+                  <p style="font-size:24px; margin:0">
+                     <span style="font-size:16px">
                         ON
-                     </span> 
+                     </span>
                      YOUTUBE
                   </p>
                </div>
@@ -433,26 +479,36 @@ a{
                   MAYHEM
                </h5>
                <p style="width: 95%; margin:auto">
-                Manners Be Damned! is a couch co-op experience in which you and your friends will race to escape a deadly temple shrouded in darkness. Every surface can hide lethal traps which become visible on contact.
+                  Manners Be Damned! is a couch co-op experience in which you and your friends will race to escape a
+                  deadly temple shrouded in darkness. Every surface can hide lethal traps which become visible on
+                  contact.
                </p>
             </div>
          </div>
          <div class="columns game-art-container">
-            <img src="./images/paragraph1.gif" alt="First-slide-BG" border="0" width="80%">
+            <video width="80%" autoplay muted loop playsinline>
+               <source src="./images/paragraph1.mp4" type="video/mp4">
+               Your browser does not support the video tag.
+            </video>
          </div>
       </section>
       <section class="additional-info-container">
          <div class="columns game-art-container">
-            <img src="./images/paragraph2.gif" alt="First-slide-BG" border="0" width="80%">
+            <video width="80%" autoplay muted loop playsinline>
+               <source src="./images/paragraph2.mp4" type="video/mp4">
+               Your browser does not support the video tag.
+            </video>
          </div>
          <div class="columns content">
             <div class="content-container">
-               
+
                <h5 style="color: #ffb300;">
                   MISCHIEF
                </h5>
                <p style="width: 95%; margin:auto">
-                  In a cycle of death, discovery, and revival, push deeper every time, clambering over each other’s limp bodies. Each player will play as a dapper gentleman, armed with ungentlemanly quips and canes, ready to dish out mockery in all forms (fully voiced)!
+                  In a cycle of death, discovery, and revival, push deeper every time, clambering over each other’s limp
+                  bodies. Each player will play as a dapper gentleman, armed with ungentlemanly quips and canes, ready
+                  to dish out mockery in all forms (fully voiced)!
                </p>
             </div>
          </div>
@@ -464,7 +520,8 @@ a{
                   MERRIMENT
                </h5>
                <p style="width: 95%; margin:auto">
-                  Get rewarded for your speed, agility and stick wielding mastery - score the most points and finish ahead of your rivals!
+                  Get rewarded for your speed, agility and stick wielding mastery - score the most points and finish
+                  ahead of your rivals!
                   <!-- <ul style="text-align:left; font-size:16px">
                      <li>Local co-op for up to 8 players</li>
                      <li>Unique blend of casual and rage platforming</li>
@@ -477,7 +534,10 @@ a{
             </div>
          </div>
          <div class="columns game-art-container">
-            <img src="./images/paragraph3.gif" alt="First-slide-BG" border="0" width="80%">
+            <video width="80%" autoplay muted loop playsinline>
+               <source src="./images/paragraph3.mp4" type="video/mp4">
+               Your browser does not support the video tag.
+            </video>
          </div>
       </section>
       <section class="additional-info-container">
@@ -486,14 +546,18 @@ a{
          </div>
          <div class="columns content">
             <div class="content-container">
-               
+
                <h5 style="color: #ffb300;">
                   Thank you to our partners!
                </h5>
                <p style="width: 95%; margin:auto">
-                  With "Manners Be Damned!", we set out to create a party platformer that supported 8 players and solved the problem of miss-matched skill levels that naturally occur in a party setting. Through much iteration on level design, use of creative equalization mechanics, and extensive playtesting - we believe we've reached those goals! We did not get here alone, however...
+                  With "Manners Be Damned!", we set out to create a party platformer that supported 8 players and solved
+                  the problem of miss-matched skill levels that naturally occur in a party setting. Through much
+                  iteration on level design, use of creative equalization mechanics, and extensive playtesting - we
+                  believe we've reached those goals! We did not get here alone, however...
 
-                  <br><br>The project is being funded by the European Union, and supported by our partners at Startup Lithuania and GameBCN who made it all possible. We're extremely grateful for the opportunity!
+                  <br><br>The project is being funded by the European Union, and supported by our partners at Startup
+                  Lithuania and GameBCN who made it all possible. We're extremely grateful for the opportunity!
                </p>
             </div>
          </div>
@@ -507,31 +571,49 @@ a{
       </h1>
       <div class="colored-image-footer" style="padding: 10px 16% 5px 16%;">
          <span>
-            <a href="https://discord.gg/KyVkma3Tyw" style="padding: 0% 1%;" target="_blank"> <img src="https://i.ibb.co/XZPS90R/Social-1-Discord-copy.png" alt="Social-1-Discord-copy" border="0" width="40px">
+            <a href="https://discord.gg/KyVkma3Tyw" style="padding: 0% 1%;" target="_blank"> <img
+                  src="https://i.ibb.co/XZPS90R/Social-1-Discord-copy.png" alt="Social-1-Discord-copy" border="0"
+                  width="40px">
             </a>
-            <a href="https://store.steampowered.com/publisher/cheekystork" style="padding: 0% 1%;" target="_blank"> <img src="https://i.ibb.co/413BtVr/02-Steam-white.png" alt="Social-1-Discord-copy" border="0" width="40px">
+            <a href="https://store.steampowered.com/publisher/cheekystork" style="padding: 0% 1%;" target="_blank"> <img
+                  src="https://i.ibb.co/413BtVr/02-Steam-white.png" alt="Social-1-Discord-copy" border="0" width="40px">
             </a>
-            <a href="https://twitter.com/cheekystork/" style="padding: 0% 1%;" target="_blank"> <img src="https://i.ibb.co/zVNSn11/Social-2-Twitter-copy.png" alt="Social-2-Twitter-copy" border="0" width="40px">
+            <a href="https://twitter.com/cheekystork/" style="padding: 0% 1%;" target="_blank"> <img
+                  src="https://i.ibb.co/zVNSn11/Social-2-Twitter-copy.png" alt="Social-2-Twitter-copy" border="0"
+                  width="40px">
             </a>
-            <a href="http://www.linkedin.com/company/cheeky-stork/" style="padding: 0% 1%;" target="_blank"> <img src="https://i.ibb.co/1M8BHfL/Social-3-Linkedin-copy.png" alt="Social-3-Linkedin-copy" border="0" width="40px">
+            <a href="http://www.linkedin.com/company/cheeky-stork/" style="padding: 0% 1%;" target="_blank"> <img
+                  src="https://i.ibb.co/1M8BHfL/Social-3-Linkedin-copy.png" alt="Social-3-Linkedin-copy" border="0"
+                  width="40px">
             </a>
-            <a href="https://www.facebook.com/cheekystork" style="padding: 0% 1%;" target="_blank"> <img src="https://i.ibb.co/kQ7r8cY/Social-4-Facebook-copy.png" alt="Social-4-Facebook-copy" border="0" width="40px">
+            <a href="https://www.facebook.com/cheekystork" style="padding: 0% 1%;" target="_blank"> <img
+                  src="https://i.ibb.co/kQ7r8cY/Social-4-Facebook-copy.png" alt="Social-4-Facebook-copy" border="0"
+                  width="40px">
             </a>
-            <a href="https://www.twitch.tv/cheekystork" style="padding: 0% 1%;" target="_blank"> <img src="https://i.ibb.co/c1Rq3cs/06-Twitch-white.png" alt="Social-4-Facebook-copy" border="0" width="40px">
+            <a href="https://www.twitch.tv/cheekystork" style="padding: 0% 1%;" target="_blank"> <img
+                  src="https://i.ibb.co/c1Rq3cs/06-Twitch-white.png" alt="Social-4-Facebook-copy" border="0"
+                  width="40px">
             </a>
-            <a href="https://www.tiktok.com/@cheekystork?lang=en" style="padding: 0% 1%;" target="_blank"> <img src="https://i.ibb.co/z64bWFB/07-Tik-Tok-white.png" alt="Social-4-Facebook-copy" border="0" width="40px">
+            <a href="https://www.tiktok.com/@cheekystork?lang=en" style="padding: 0% 1%;" target="_blank"> <img
+                  src="https://i.ibb.co/z64bWFB/07-Tik-Tok-white.png" alt="Social-4-Facebook-copy" border="0"
+                  width="40px">
             </a>
-            <a href="https://www.instagram.com/cheekystork/" style="padding: 0% 1%;" target="_blank">  <img src="https://i.ibb.co/5GggnRF/Social-5-Instagram-copy.png" alt="Social-5-Instagram-copy" border="0" width="40px">
+            <a href="https://www.instagram.com/cheekystork/" style="padding: 0% 1%;" target="_blank"> <img
+                  src="https://i.ibb.co/5GggnRF/Social-5-Instagram-copy.png" alt="Social-5-Instagram-copy" border="0"
+                  width="40px">
             </a>
-            <a href="https://www.youtube.com/channel/UCPTEf-VbL-_J7LLqdyURJsQ/featured" style="padding: 0% 1%;" target="_blank">  <img src="https://i.ibb.co/kDRm7V6/09-Youtube-white.png" alt="Social-5-Instagram-copy" border="0" width="40px">
+            <a href="https://www.youtube.com/channel/UCPTEf-VbL-_J7LLqdyURJsQ/featured" style="padding: 0% 1%;"
+               target="_blank"> <img src="https://i.ibb.co/kDRm7V6/09-Youtube-white.png" alt="Social-5-Instagram-copy"
+                  border="0" width="40px">
             </a>
          </span>
       </div>
-      <h1 >
+      <h1>
          CONTACT US
       </h1>
       <div class="colored-image-footer" style="align-items: center;">
-         <a href="mailto:team@cheekystork.com" style="display: block;"> <img src="https://i.ibb.co/txvzsTs/Social-6-Mail-copy.png" alt="Social-6-Mail-copy" border="0" width="80px">
+         <a href="mailto:team@cheekystork.com" style="display: block;"> <img
+               src="https://i.ibb.co/txvzsTs/Social-6-Mail-copy.png" alt="Social-6-Mail-copy" border="0" width="80px">
          </a>
       </div>
       <div class="colored-image-footer" style="align-items: center; vertical-align: middle; background-color:#f3a737">
@@ -541,9 +623,9 @@ a{
       <div class="final-footer">
          <div>
             <div style="float: left;">
-               <img src="https://i.ibb.co/bd80x3F/Cheeky-Stork-Horizontal.png" alt="" width=120px >
+               <img src="https://i.ibb.co/bd80x3F/Cheeky-Stork-Horizontal.png" alt="" width="120px">
             </div>
-            
+
             <p style="text-align: justify; display: inline-block;
             padding: 0 20px; font-family: 'Rajdhani'">
                "Mandro gandro studija", MB <br>
@@ -553,7 +635,7 @@ a{
             </p>
          </div>
       </div>
-      <div style="justify-content: center; align-self: flex-end; padding-bottom: 10px; font-family:'Rajdhani">
+      <div style="justify-content: center; align-self: flex-end; padding-bottom: 10px; font-family:'Rajdhani'">
          Copyright 2025 Cheeky Stork. All rights reserved
       </div>
    </footer>
